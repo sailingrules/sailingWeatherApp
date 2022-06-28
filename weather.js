@@ -1,3 +1,6 @@
+"scripts": {
+    "start": "node server.js"
+}
 const axios = require('axios');
 
 axios
