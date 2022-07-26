@@ -28,18 +28,23 @@
 //      console.log('Node server is running');
 //  });
 
- //Email verification 
-const sendBtn = document.getElementById("send");
-function validateEmail(){
-    let email = document.getElementById("email").value 
-    const hasAtSign = email.includes("@")
-    const hasPeriod = email.includes(".")
-    const isLongEnough = email.length > 2
-    let verifyCriteria1 = hasAtSign
-    let verifyCriteria2 = hasPeriod
-    let verifyCriteria3 = isLongEnough
-    let x = (verifyCriteria1 && verifyCriteria2 && verifyCriteria3)
-    return x
+ //Search verification 
+const searchBtn = document.getElementById("search");
+
+function validateRequest(){
+    let weatherRequest = document.getElementById("searchInput").value
+    console.log(weatherRequest)
+    let allInSameCase = document.getElementById("searchInput").value.toLowerCase() 
+    console.log(allInSameCase)
+    if (allInSameCase === "wave" || allInSameCase === "wind"){
+        console.log("this a wave")
+    }
+    else {
+        console.log("something Else")
+    }
 }
 
- 
+
+const weatherUrl = 'api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={623c95481a0a14267b1da87baef2cdde}'
+fetch(weatherUrl)
+    .then(res => console.log(res))
