@@ -11,7 +11,7 @@
 //     console.error(error);
 //  });
 
-// // Express server 
+// // Express server    for node running this code must not be commented out...the front end code must be commented out...then in terminal enter" npm run start" 
 
 //  let express = require(`express`);
 //  let app = express();
@@ -36,15 +36,15 @@ function validateRequest(){
     console.log(weatherRequest)
     let allInSameCase = document.getElementById("searchInput").value.toLowerCase() 
     console.log(allInSameCase)
-    if (allInSameCase === "wave" || allInSameCase === "wind"){
+    if (allInSameCase === "wave" || allInSameCase === "temp" || allInSameCase === "temperature" ){
         console.log("this a wave")
     }
-    else {
-        console.log("something Else")
+    else {ls
+        document.getElementById("errorMessage")
     }
 }
 
-
-const weatherUrl = 'api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={623c95481a0a14267b1da87baef2cdde}'
+const weatherUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=50&lon=100&appid='
 fetch(weatherUrl)
-    .then(res => console.log(res))
+    .then(res => res.json())
+    .then((data) => console.log(data.list[35].wind))
