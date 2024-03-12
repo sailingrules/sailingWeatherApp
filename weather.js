@@ -23,10 +23,14 @@
  });
 
  app.use('/api/', router);
-
- var server = app.listen (5004,function(){
+ let port = process.env.PORT;
+ if (port == null || port == "") {
+   port = 8000;
+ 
+ app.listen(port);
+//  var server = app.listen (5004,function(){
      console.log('Node server is running');
- });
+ };
 
  //Search verification 
 // const searchBtn = document.getElementById("search");
