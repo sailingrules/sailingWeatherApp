@@ -22,15 +22,15 @@
         res.send("sweet");
  });
 
- app.use('/api/', router);
- let port = process.env.PORT;
- if (port == null || port == "") {
-   port = 8000;
+//  app.use('/api/', router);
+//  let port = process.env.PORT;
+//  if (port == null || port == "") {
+//    port = 8000;
  
- app.listen(port);
-//  var server = app.listen (5004,function(){
+//  app.listen(port);
+   var server = app.listen (5029,function(){
      console.log('Node server is running');
- };
+ });
 
  //Search verification 
 // const searchBtn = document.getElementById("search");
