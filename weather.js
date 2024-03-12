@@ -11,40 +11,40 @@
 //     console.error(error);
 //  });
 
-// // Express server    for node running this code must not be commented out...the front end code must be commented out...then in terminal enter" npm run start" 
+// Express server    for node running this code must not be commented out...the front end code must be commented out...then in terminal enter" npm run start" 
 
-//  let express = require(`express`);
-//  let app = express();
+ let express = require(`express`);
+ let app = express();
 
-//  let router = express.Router();
+ let router = express.Router();
 
-//  router.get('/', function(req,res,next){
-//         res.send("sweet");
-//  });
+ router.get('/', function(req,res,next){
+        res.send("sweet");
+ });
 
-//  app.use('/api/', router);
+ app.use('/api/', router);
 
-//  var server = app.listen (5010,function(){
-//      console.log('Node server is running');
-//  });
+ var server = app.listen (5004,function(){
+     console.log('Node server is running');
+ });
 
  //Search verification 
-const searchBtn = document.getElementById("search");
+// const searchBtn = document.getElementById("search");
 
-function validateRequest(){
-    let weatherRequest = document.getElementById("searchInput").value
-    console.log(weatherRequest)
-    let allInSameCase = document.getElementById("searchInput").value.toLowerCase() 
-    console.log(allInSameCase)
-    if (allInSameCase === "wave" || allInSameCase === "temp" || allInSameCase === "temperature" ){
-        console.log("this a wave")
-    }
-    else {ls
-        document.getElementById("errorMessage")
-    }
-}
+// function validateRequest(){
+//     let weatherRequest = document.getElementById("searchInput").value
+//     console.log(weatherRequest)
+//     let allInSameCase = document.getElementById("searchInput").value.toLowerCase() 
+//     console.log(allInSameCase)
+//     if (allInSameCase === "wave" || allInSameCase === "temp" || allInSameCase === "temperature" ){
+//         console.log("this a wave")
+//     }
+//     else {ls
+//         document.getElementById("errorMessage")
+//     }
+// }
 
-const weatherUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=50&lon=100&appid='
-fetch(weatherUrl)
-    .then(res => res.json())
-    .then((data) => console.log(data.list[35].wind))
+// const weatherUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=50&lon=100&appid='
+// fetch(weatherUrl)
+//     .then(res => res.json())
+//     .then((data) => console.log(data.list[35].wind))
