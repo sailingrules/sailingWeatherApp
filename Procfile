@@ -1,1 +1,1 @@
-web: node ./weather.js
+web: npm start 

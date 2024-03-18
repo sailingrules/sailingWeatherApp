@@ -27,7 +27,7 @@
 //  if (port == null || port == "") {
 //    port = 8000;
  
-//  app.listen(port);
+    app.listen(port);
    var server = app.listen (5029,function(){
      console.log('Node server is running');
  });
