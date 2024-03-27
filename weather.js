@@ -52,3 +52,15 @@
 // fetch(weatherUrl)
 //     .then(res => res.json())
 //     .then((data) => console.log(data.list[35].wind))
+
+const app = require("express")();
+
+const PORT = process.env.PORT || 80;
+
+app.get("", (req,res) => {
+    res.send("Hello world");
+});
+
+app.listen(PORT, () => {
+console.log('App up at port ${PORT}');
+});
