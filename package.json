@@ -7,11 +7,11 @@
     "nodemon": "^2.0.19"
   },
   "scripts": {
-    "start": "nodemon weather.js"
+    "start": "nodemon app.js"
   },
   "name": "sailingweatherapp",
   "version": "1.0.0",
-  "main": "weather.js",
+  "main": "app.js",
   "keywords": [],
   "author": "",
   "license": "ISC",
