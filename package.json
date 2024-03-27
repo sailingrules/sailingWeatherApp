@@ -1,12 +1,19 @@
 {
   "dependencies": {
     "axios": "^0.27.2",
-    "express": "^4.18.1",
+    "express": "^4.19.2",
     "jest": "^28.1.3",
     "nodemailer": "^6.7.7",
     "nodemon": "^2.0.19"
   },
   "scripts": {
     "start": "nodemon weather.js"
-  }
+  },
+  "name": "sailingweatherapp",
+  "version": "1.0.0",
+  "main": "weather.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
