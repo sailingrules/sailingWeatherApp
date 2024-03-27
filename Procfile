@@ -1,1 +1,1 @@
-web: node sailingweather
+web: node ./app.js
