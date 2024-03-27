@@ -28,7 +28,7 @@
 //    port = 8000;
  
     app.listen(port);
-   var server = app.listen (8000,function(){
+   var server = app.listen (80,function(){
      console.log('Node server is running');
  });
 
