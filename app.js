@@ -1,11 +1,11 @@
-// const app = require("express")();
+const app = require("express")();
 
-// const PORT = process.env.PORT || 80;
+const PORT = process.env.PORT || 80;
 
-// app.get("", (req,res) => {
-//     res.send("Hello world");
-// });
+app.get("", (req,res) => {
+    res.send("Hello world");
+});
 
-// app.listen(PORT, () => {
-// console.log('App up at port ${PORT}');
-// });
+app.listen(PORT, () => {
+console.log('App up at port ${PORT}');
+});
