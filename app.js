@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(express.static("sailingWeatherApp"));
 
 app.use('/', function(req,res){
-    res.sendFile(path.join(_dirname+'sailingWeatherApp/Home.html'));
+    res.sendFile(path.join(_dirname+'weather.js/Home.html'));
 });
 app.listen(PORT, () => {
 console.log('App up at port ${PORT}');
