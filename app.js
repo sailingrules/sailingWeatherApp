@@ -15,7 +15,7 @@ const port = process.env.PORT || 80;
 
 app.use(express.json());
 
-app.use(express.static("sailingWeatherApp"));
+app.use(express.static("Home.html"));
 
 app.use('/', function(req,res){
     res.sendFile(path.join(_dirname+'Home.html'));
