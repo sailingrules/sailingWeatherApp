@@ -7,7 +7,7 @@
     "nodemon": "^2.0.19"
   },
   "scripts": {
-    "start": "nodemon weather.js"
+    "start": "node app.js"
   },
   "name": "sailingweatherapp",
   "version": "1.0.0",
