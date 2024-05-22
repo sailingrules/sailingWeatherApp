@@ -10,7 +10,7 @@
 // });
 const app = require('express')();
 const path = require('path');
-const port = process.env.PORT || 80;
+const PORT = process.env.PORT || 80;
 
 app.use(express.json());
 
