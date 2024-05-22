@@ -15,10 +15,9 @@ const port = process.env.PORT || 80;
 
 app.use(express.json());
 
-app.use(express.static("Home.html"));
 
 app.use('/', function(req,res){
-    res.sendFile(path.join(_dirname+'firstpage/Home.html'));
+    res.sendFile(path.join(__dirname,'/Home.html'));
 });
 app.listen(PORT, () => {
 console.log('App up at port ${PORT}');
