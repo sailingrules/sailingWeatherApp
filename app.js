@@ -8,8 +8,8 @@
 // app.listen(PORT, () => {
 // console.log('App up at port ${PORT}');
 // });
-const app = require('express')();
-const path = require('path');
+const express = require('express');
+const app = express();
 const PORT = process.env.PORT || 80;
 
 app.use(express.static('sailingWeatherApp'));
